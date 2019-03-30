@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Pagina para algo</title>
+    </head>
+    <body>
+    <script type="text/javascript" src="ola.js" ></script>
+        <form>
+            <label for="sdelimiter"> delimitador da string:</label>
+            <input id="sdelimiter" name="sdelimiter" type = "text" value='"'/>
+            <label for="qtdCaracter">Quantidade de caracteres por string</label>
+            <input id="qtdCaracter" name="qtdCaracter" type="number" min=1 step=1 value=50 /><br/>
+            <label for="txtFuncao">função</label>
+            <input id="txtFuncao" name="txtFuncao" type="text"  value="printf"/>
+            <input id="chbFunc" name="checkbox" type="checkbox" checked/><label for="chbFunc"> delimitar função?</label>
+            <input id="chbpontoVirgula" name="chbPonto" type="checkbox" checked/><label for="chbpontoVirgula">colocar ;</label><br/>
+            <textarea name="Name" rows="30" cols="150"></textarea><br/>
+            <br/>
+            <input type="submit" onclick="return formValidator(this.form)" />
+        </form>
+        <div id="saida"></div>
+    </body>
+</html>
