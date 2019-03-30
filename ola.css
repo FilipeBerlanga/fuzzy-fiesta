@@ -1,0 +1,40 @@
+body{
+    background-color: #F7F7F7;
+}
+form {
+    background-color: #EEE;
+    width : 50%;
+    margin-left : 24%;
+    margin-right : 24%;
+    padding : 2%;
+}
+
+form textarea {
+    width : 100%;
+}
+
+form > div{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+form > div input{
+    text-align : right
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid #DDD;
+    padding: 1%;
+}
+
+.distr {
+    display: flex;
+    justify-content: space-around;
+}

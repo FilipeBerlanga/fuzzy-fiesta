@@ -34,6 +34,7 @@ function formValidator( e ){
     textoSaida+=closeFunction;
     console.log(textoSaida);
     saida.innerHTML = textoSaida;
+    window.location.hash = "saida";
     return false;
 }
 

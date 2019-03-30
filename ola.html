@@ -1,21 +1,39 @@
 <html>
     <head>
         <title>Pagina para algo</title>
+        <script type="text/javascript" src="ola.js" ></script>
+        <link rel="stylesheet" type="text/css" href="ola.css"/>
     </head>
     <body>
-    <script type="text/javascript" src="ola.js" ></script>
-        <form>
-            <label for="sdelimiter"> delimitador da string:</label>
-            <input id="sdelimiter" name="sdelimiter" type = "text" value='"'/>
-            <label for="qtdCaracter">Quantidade de caracteres por string</label>
-            <input id="qtdCaracter" name="qtdCaracter" type="number" min=1 step=1 value=50 /><br/>
-            <label for="txtFuncao">função</label>
-            <input id="txtFuncao" name="txtFuncao" type="text"  value="printf"/>
-            <input id="chbFunc" name="checkbox" type="checkbox" checked/><label for="chbFunc"> delimitar função?</label>
-            <input id="chbpontoVirgula" name="chbPonto" type="checkbox" checked/><label for="chbpontoVirgula">colocar ;</label><br/>
-            <textarea name="Name" rows="30" cols="150"></textarea><br/>
+        <form class="box">
+            <div>
+                <label for="sdelimiter"> delimitador da string:</label>
+                <input id="sdelimiter" name="sdelimiter" type = "text" value='"'/>
+            </div>
+
+            <div>
+                <label for="qtdCaracter">Quantidade de caracteres por string</label>
+                <input id="qtdCaracter" name="qtdCaracter" type="text" pattern="[1-9]" value=50 />
+            </div>
+
+            <div>
+                <label for="txtFuncao">função</label>
+                <input id="txtFuncao" name="txtFuncao" type="text"  value="printf"/>
+            </div>
+
+            <div class="box distr">
+                <span>
+                    <input id="chbFunc" name="checkbox" type="checkbox" checked/><label for="chbFunc"> delimitar função?</label>
+                </span>
+                <span>
+                    <input id="chbpontoVirgula" name="chbPonto" type="checkbox" checked/><label for="chbpontoVirgula">colocar ;</label>
+                </span>
+            </div>
+            <textarea name="Name" rows="30"></textarea><br/>
             <br/>
-            <input type="submit" onclick="return formValidator(this.form)" />
+            <div class="center">
+                <button onclick="return formValidator(this.form)"> Executar </button>
+            </div>
         </form>
         <div id="saida"></div>
     </body>
