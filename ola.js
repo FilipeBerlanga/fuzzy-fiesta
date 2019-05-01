@@ -3,6 +3,7 @@ function formValidator( e ){
     let texto = e.Name.value;
     let textoSaida ="";
     const lim = e.qtdCaracter.value;
+    console.log(lim);
     let conta = 0;
     let funcName = e.txtFuncao.value;
     let openFunction = e.checkbox.checked == true ? "(" : "";
@@ -12,10 +13,6 @@ function formValidator( e ){
     saida.innerHTML = "";
     textoSaida += "<p>" + funcName + openFunction + "";
     for(var i = 0 ; i < texto.length ; i++){
-        if(conta == lim){
-            textoSaida += closeFunction + ";</p><p>" + funcName + openFunction ;
-            conta = 0;
-        }
         if(texto.charAt(i) == '"'){
             textoSaida += "\\\"";
         }else if(texto.charAt(i) == '\n'){
@@ -30,6 +27,10 @@ function formValidator( e ){
             textoSaida += texto.charAt(i);
         }
         conta++;
+        if(texto.charAt(i) == "\n"){
+            textoSaida += closeFunction + "</P><P>" + funcName + openFunction ;
+            conta = 0;
+        }
     }
     textoSaida+=closeFunction;
     console.log(textoSaida);
