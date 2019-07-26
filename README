@@ -1,0 +1,9 @@
+Facilitador para implementação de códigos WEB em linguagem C 
+
+O programa converte textos em string do C, podendo quebrar a string em partes, muito util para a inserção de aplicações voltadas ao 
+desenvolvimento WEB, podendo assim converter códigos HTML/CSS/javascript para ser utilizado em microcontroladres como o ESP8266 e ESP32,
+dessa forma, podem ser desnvolvidas e testadas paginas WEB antes de serem implementadas no dispositivo, facilitando assim o desenvolvimento 
+de web servers voltados para a Internet das coisas (IoT).
+A última atualização possibilitou a string ser quebrada com a mesma identação do código original, facilitando seu entendimento para 
+alternações dentro do código do microcontrolador, possibilitando maior manipulação da pagina web, deixando mais fácil o desenvolvimento 
+de sisptemas supervisórios por exemplo.
